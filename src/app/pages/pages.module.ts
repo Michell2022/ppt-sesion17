@@ -20,6 +20,12 @@ import { VisionComponent } from './vision/vision.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    BreakingComponent,
+    ContactoComponent,
+    HomeComponent,
+    NosotrosComponent
   ]
 })
 export class PagesModule { }
