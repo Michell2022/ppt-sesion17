@@ -1,13 +1,13 @@
 <header class="bg-blue-400 text-white ">
-    <div class="flex justify-between w-11/12">
-        <div class="text-4xl py-4 px-10 font-bold">
-            <p>Navbar</p>
+    <div class="flex justify-between">
+        <div class="text-4xl py-4 px-10 font-bold w-11/12 mx-auto">
+            <p>Owitech</p>
         </div>
         <nav class="flex items-center">
             <ul class="flex">
-                <li><a class="px-3 text-xl" routerLinkActive routerLink="">Home</a></li>
-                <li><a class="px-3 text-xl" routerLinkActive routerLink="nosotros">Nosotros</a></li>
-                <li><a class="px-3 text-xl" routerLinkActive routerLink="contacto">Contacto</a></li>
+                <li><a class="mx-6 text-xl" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="bg-blue-600 rounded py-2 px-5" routerLink="/">Home</a></li>
+                <li><a class="mx-6 text-xl" routerLinkActive="bg-blue-600 rounded py-2 px-5" routerLink="/nosotros">Nosotros</a></li>
+                <li><a class="mx-6 text-xl" routerLinkActive="bg-blue-600 rounded py-2 px-5" routerLink="/contacto">Contacto</a></li>
             </ul>
         </nav>
     </div>

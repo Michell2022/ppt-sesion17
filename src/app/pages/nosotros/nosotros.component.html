@@ -1,1 +1,30 @@
-<p>nosotros works!</p>
+<div class="bg-slate-200 w-4/5 mx-auto mt-10 flex">
+    <div class="p-6">
+        <h1 class="font-bold text-3xl pb-3">Acerca de la empresa</h1>
+        <hr class="w-10">
+        <div class="pt-4">
+            <p>
+                Owitech S.A.C es una empresa con 7 años de experiencia que tiene como misión convertirse en su
+                aliado estratégico a través de la asesoría e implementación de Soluciones Integrales de Tecnología de
+                Información para incrementar la productividad de su empresa.
+            </p>
+            <br>
+            <hr class="w-10">
+            <p class="pt-2">
+                Nuestros valores: Vocación de servicio, puntualidad y compromiso.
+            </p>
+            <div class="flex py-8  flex flex-col">
+                <div class="mx-6">
+                    <a class="bg-blue-400 rounded py-2 px-6 text-white mx-5" [routerLink]="['mision']" >Misión</a>
+                    <a class="bg-blue-400 rounded py-2 px-6 text-white ml-6" [routerLink]="['vision']">Visión</a>
+                </div>
+                <div>
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="https://www.soportepc.pe/wp-content/uploads/2016/11/project-05.jpg" alt="acerca Empresa">
+    </div>
+</div>

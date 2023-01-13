@@ -6,6 +6,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { BreakingComponent } from './breaking/breaking.component';
 import { MisionComponent } from './mision/mision.component';
 import { VisionComponent } from './vision/vision.component';
+import { RouterLink, RouterModule } from '@angular/router';
 
 
 
@@ -19,7 +20,9 @@ import { VisionComponent } from './vision/vision.component';
     VisionComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    RouterLink,
+    RouterModule
   ],
   exports: [
     BreakingComponent,
